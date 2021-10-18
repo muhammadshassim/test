@@ -1,0 +1,33 @@
+﻿<Window x:Class="ProgTask1New.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgTask1New"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="340" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF33BFAC">
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="23" Margin="121,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="creditHoursTB" HorizontalAlignment="Left" Height="23" Margin="121,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="weeklyHoursTB" HorizontalAlignment="Left" Height="23" Margin="121,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="noOfWeeksTB" HorizontalAlignment="Left" Height="23" Margin="121,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <Calendar x:Name="startDateCalender" HorizontalAlignment="Left" Margin="121,209,0,48"/>
+        <Label Content="Code" HorizontalAlignment="Left" Margin="20,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.315,-0.644"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.315,-0.644"/>
+        <Label Content="Credit Hours" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.315,-0.644"/>
+        <Label Content="Weekly Hours" HorizontalAlignment="Left" Margin="20,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.315,-0.644"/>
+        <Label Content="No. of Weeks" HorizontalAlignment="Left" Margin="20,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.315,-0.644"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="20,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.315,-0.644"/>
+        <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Left" Margin="121,376,0,0" VerticalAlignment="Top" Width="179" Click="AddBtn_Click"/>
+        <ComboBox x:Name="codeCB" HorizontalAlignment="Left" Margin="121,27,0,0" VerticalAlignment="Top" Width="179" SelectionChanged="codeCB_SelectionChanged">
+            <ComboBoxItem Content="PROG6211"/>
+            <ComboBoxItem Content="DATA6211"/>
+            <ComboBoxItem Content="SAND6231"/>
+            <ComboBoxItem Content="INRS7311"/>
+            <ComboBoxItem Content="APDS7211"/>
+            <ComboBoxItem Content="CLDV6211"/>
+        </ComboBox>
+        <Button x:Name="Exit2_btn" Content="Exit" HorizontalAlignment="Left" Margin="121,401,0,0" VerticalAlignment="Top" Width="179" Click="Exit2_btn_Click"/>
+
+    </Grid>
+</Window>
